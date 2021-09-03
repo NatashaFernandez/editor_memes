@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de memes</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+<!----------Iconos---------->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!----------Header---------->
+<div class="caja-padre">
+<header id="header">
+    <div id="title"> <h1 class="meme-editor">Generador de memes</h1>
+    </div>
+    <div id="buttons">
+        <button class="button"><i class="fas fa-image"></i><p class="button-text"> Imagen</p></button>
+        <button class="button"><i class="fas fa-font"></i><p class="button-text"> Texto</p></button>
+        <button class="button"><i class="fas fa-lightbulb"></i><p class="button-text"> Modo claro</p></button>
+    </div>
+</header>
+<!----------FIN Header---------->
+
+<!----------Editor de memes---------->
+<main id="mainmayor">
+<main id="main">
+    <section id="meme-container">
+        <div class="meme-title"><h1 class="top-text">Top text</h1>
+        </div>
+        <div class="meme-url" src="">
+        </div>
+        <div class="meme-footer"><h1 class="bottom-text">Bottom text</h1>
+        </div>
+    </section>
+    <section id=meme-buttom>
+        <button class="button-download"><i class="fas fa-save"></i><p class="download-meme">Descargar meme</p></button>
+    </section>
+</main>
+<!----------FIN Editor de memes---------->
+</div>
+<!----------Aside Imagen---------->
+<aside id="aside">
+    <h3 class="titulo-aside">IMAGEN</h3>
+    <label>URL<br>
+        <input class ="prop-input"type=url name=url><br>
+    </label>
+        <label class="prop">FONDO<br>
+        <div class="divisor">
+        <div><input type=color name=color placeholder="#FFFFFF" class ="prop-input clase-fondo"></div><!--REVEER ESTO-->
+        <div><select  name="opciones" class ="prop-input clase-opciones">
+        <option value="ninguno">Ninguno</option>
+        <option value="Aclarar">Aclarar</option>
+        <option value="Oscurecer">Oscurecer</option>
+        <option value="Diferencia">Diferencia</option>
+        <option value="Luminosidad">Luminosidad</option>
+        <option value="Multiplicar">Multiplicar</option>
+    </select></div>
+    </div>
+    </label><br>
+    <p class="prop-filtros">FILTROS</p><br>
+    <p><label class="prop">BRILLO</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">OPACIDAD</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">CONTRASTE</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">DESENFOQUE</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">ESCALA DE GRISES</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">SEPIA</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">HUE</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">SATURADO</label><br><input type="range" min="0" max="100"></p><br>
+    <p><label class="prop">NEGATIVO</label><br><input type="range" min="0" max="100"></p><br>
+    <button class ="prop-button" type="reset">Restablecer Filtros</button>
+</aside>
+</main>
+
+<!----------FIN Aside Imagen---------->
+
+</body>
+</html>
