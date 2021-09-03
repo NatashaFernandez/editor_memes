@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/19dc427cb9.js" crossorigin="anonymous"></script>
+    </head>
+    <style>/*
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .texto{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 17%;
+            background-color:slategrey;
+            padding: 15px;
+        }
+        h3{
+            text-align: center;
+        }
+        label{
+            font-size: 0.8rem;
+        }
+        p{
+            font-size: 0.8rem; 
+            margin-bottom: -0.8em;
+            margin-top:0;
+        }
+        .recuadro{
+            width: 97%;
+            padding:0.6em 0;
+            border-radius:5px;
+            border-color: silver;
+            background-color:silver;
+            margin: 0.3em 0;
+        }
+        .seleccionar{
+            margin-bottom: 2em;
+        }
+        select{
+            padding: 0 0.2em;
+        }
+        .fuentes{
+            display: flex;
+            width: 100%;
+            margin-bottom: 1.5em;
+        }
+        .font{
+            width: 55%;
+        }
+        .inputfuentes{
+            width: 92%;
+            padding: 0.6em 0;
+            border-radius: 5px;
+            border-color: silver;
+            background-color:silver;
+        }
+        .alineado{
+            width: 50%;
+        }
+        .alin{
+            padding: 0.6em 0.6em;
+            border-radius: 5px;
+            border-color: silver;
+            background-color:silver;
+        }
+
+        .colores{
+            display:flex;
+            justify-content:space-around;
+        }
+        .colores .color{
+            width: 50%;
+            padding: 0 2em;
+            margin-right: 3.7em;
+            background-color: silver;
+        }
+        .botones>button{
+            padding: 0.6em;
+            font-size: 1rem;
+            border-radius: 5px;
+            border-color: silver;
+            background-color: silver;
+            margin-bottom:1.5em;            
+        }*/
+        
+    </style>
+    <body>
+        <aside class="texto">
+            <h3>TEXTO</h3>
+            <label>SUPERIOR <br>
+                <input class="recuadro" type="text" name="TOP TEXT" placeholder="TOP TEXT"><br>
+                <input class="seleccionar" type="checkbox" name="seleccionar">Sin texto superior<br></label>
+
+            <label>INFERIOR<br>
+                <input class="recuadro" type="text" name="BOTTOM TEXT" placeholder="BOTTOM TEXT"><br>
+                <input class="seleccionar" type="checkbox" name="seleccionar">Sin texto inferior <br></label>
+
+            <label>FUENTE<br>
+                <select class="recuadro" name="fuente">
+                    <option value="Arial">Arial</option>
+                    <option value="Arial Black">Arial Black</option>
+                    <option value="American Typewriter">American Typewriter</option>
+                    <option value="Andale Mono">Andale Mono</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select><br></label> 
+            <section class="fuentes">
+                <div class="font">
+                    <input class="inputfuentes"  type="number">
+                </div>
+                <div class="alineado">            
+                    <button class="alin"><i class="fas fa-align-left"></i></button>
+                    <button class="alin"><i class="fas fa-align-justify"></i></button>
+                    <button class="alin"><i class="fas fa-align-right"></i></button>
+                </div>
+            </section>
+
+            <section class="colores">
+                <div>
+                    <label>COLOR <br>
+                        <input class="color"type="color"> </label>
+                </div>
+                <div >
+                    <label>FONDO<br>
+                        <input class="color" type="color"> </label>
+                </div>
+            </section>
+            <label><input class="seleccionar" type="checkbox" name="seleccionar">Fondo transparente</label>
+
+            <p>CONTORNO </p> <br>
+            <section class="botones">
+                <button>Ninguno</button>
+                <button>Claro</button>
+                <button>Oscuro</button> <br>
+            </section>    
+
+            <label>ESPACIADO<br>
+                <input class="recuadro" type="number"></label> <br>
+
+            <label>INTERLINEADO<br>
+                <input class="recuadro" type="number"></label> <br>
+        </aside>
+    
+    </body>
+</html>
